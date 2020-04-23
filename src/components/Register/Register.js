@@ -20,7 +20,7 @@ class Register extends React.Component {
         this.setState({password:event.target.value})
     }
 onSubmitSignIn = () => {
-        fetch('http://localhost:3000/register', {
+        fetch('https://pure-tundra-93200.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -77,7 +77,7 @@ onSubmitSignIn = () => {
                         <div className="">
                             <input onClick={this.onSubmitSignIn}
                                    className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
-                                   type="submit" value="Sign in"/>
+                                   type="submit" value="Register"/>
                         </div>
                     </div>
                 </main>
